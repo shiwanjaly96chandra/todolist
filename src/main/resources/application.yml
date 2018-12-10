@@ -1,0 +1,12 @@
+server:
+  port: ${PORT}   # Port where you'd like to run the spring app
+
+spring:
+  datasource:
+    dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+    url:
+    databaseName: ${DB_NAME}
+    serverName: ${DB_SERVER}
+    username: ${PG_USER}
+    password: ${PG_PASSWORD}
+    max-active: ${MAX_DB_CONNECTION_POOL_SIZE}
